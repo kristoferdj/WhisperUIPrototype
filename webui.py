@@ -29,6 +29,7 @@ def transcribe(text, device, task, language, model_size, file, mic):
 
 demo = gr.Interface(transcribe,
                     inputs=[
+
                         gr.Textbox(label="", value="Capstone Design Group 4 prototype. Features subject to change."),
                         gr.Radio(['gpu', 'cpu'], label='Processor'),
                         gr.Radio(['transcribe', 'translate'], label='Task'),
